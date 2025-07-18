@@ -236,9 +236,29 @@ class TravelUI extends StatelessWidget {
                       child: Column(
                         children: [
                           TravelCard(
-                            image: image7,
-                            title: "Bali Adventure Tour",
+                            image: image8,
+                            title: "Romantic Paris Getway",
                             price: "\$599",
+                          ),
+                          TravelCard(
+                            image: image6,
+                            title: "Bali Advanture Tour",
+                            price: "\$599",
+                          ),
+                          TravelCard(
+                            image: image5,
+                            title: "Nepal Tour",
+                            price: "\$600",
+                          ),
+                          TravelCard(
+                            image: image7,
+                            title: "Maldive",
+                            price: "\$499",
+                          ),
+                          TravelCard(
+                            image: image9,
+                            title: "Dubai Tour",
+                            price: "\$444",
                           ),
                         ],
                       ),
