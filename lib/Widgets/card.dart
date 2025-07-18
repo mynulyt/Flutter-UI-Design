@@ -6,11 +6,11 @@ class TravelCard extends StatelessWidget {
   final String price;
 
   const TravelCard({
-    Key? key,
+    super.key,
     required this.image,
     required this.title,
     required this.price,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
