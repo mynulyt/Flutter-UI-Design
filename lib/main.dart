@@ -11,10 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Assigment of Module 8')),
-        body: TravelUI(),
-      ),
+      home: Scaffold(body: TravelUI()),
     );
   }
 }
