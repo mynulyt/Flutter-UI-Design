@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/screen/card_stack_ui_design.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,10 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: Scaffold(
-        appBar: AppBar(title: const Text('Material App Bar')),
-        body: const Center(child: Text('Hello World')),
+        appBar: AppBar(title: const Text('Assigment of Module 8')),
+        body: TravelUI(),
       ),
     );
   }
