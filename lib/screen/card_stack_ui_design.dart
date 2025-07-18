@@ -10,7 +10,45 @@ class TravelUI extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(child: Column(children: [Image.asset(image1)])),
+          Container(
+            child: Stack(
+              children: [
+                Image.asset(image5),
+                Positioned(
+                  left: 20,
+                  bottom: 90,
+                  child: Text(
+                    "Explore The World",
+                    style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  left: 20,
+                  bottom: 30,
+                  child: Container(
+                    height: 50,
+                    width: 320,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Search destination....",
+                        icon: Icon(Icons.search),
+                        iconColor: Colors.blue,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
           SizedBox(height: 10),
           Text(
             "Tap Destination",
