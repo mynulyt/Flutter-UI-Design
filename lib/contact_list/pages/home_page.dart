@@ -7,27 +7,31 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white38,
+        backgroundColor: Colors.blue,
         title: Center(
           child: Text(
             "Conatact List",
             style: TextStyle(
-              color: Colors.green,
+              color: Colors.white,
               fontSize: 22,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
       ),
-      body: Column(
-        children: [
-          ListView.builder(
-            itemCount: 10,
-            itemBuilder: (context, index) {
-              return Card(child: ListTile(leading: CircleAvatar()));
-            },
-          ),
-        ],
+      body: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return Card(
+            color: Colors.greenAccent,
+            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+            child: ListTile(
+              leading: CircleAvatar(child: Text("$index")),
+              title: Text("Mynul Alam"),
+              trailing: Icon(Icons.call),
+            ),
+          );
+        },
       ),
     );
   }
