@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/contact_list/pages/add_contact.dart';
+import 'package:flutter_ui/contact_list/pages/number_edit.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -47,7 +48,10 @@ class HomePage extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        // Edit action
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => NumberEdit()),
+                        );
                       },
                       child: const Icon(Icons.edit, color: Colors.black87),
                     ),
