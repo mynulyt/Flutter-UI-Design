@@ -19,6 +19,11 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.cyanAccent,
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
       body: ListView.builder(
         itemCount: 20,
         itemBuilder: (context, index) {
