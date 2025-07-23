@@ -23,7 +23,7 @@ class NumberEdit extends StatelessWidget {
                     child: Icon(Icons.cancel_presentation, size: 50),
                   ),
                   Text(
-                    "Save Number",
+                    "Edit Number",
                     style: TextStyle(
                       color: Colors.black45,
                       fontSize: 22,
