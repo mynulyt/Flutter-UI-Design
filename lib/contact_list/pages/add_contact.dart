@@ -40,6 +40,7 @@ class AddContact extends StatelessWidget {
             SizedBox(height: 20),
             Card(
               child: TextField(
+                keyboardType: TextInputType.name,
                 decoration: InputDecoration(
                   label: Text("Name"),
                   suffixIcon: Icon(Icons.arrow_drop_down_circle_outlined),
@@ -52,6 +53,7 @@ class AddContact extends StatelessWidget {
             SizedBox(height: 20),
             Card(
               child: TextField(
+                keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   label: Text("Phone"),
                   suffixIcon: Icon(Icons.arrow_drop_down_circle_outlined),
@@ -64,6 +66,7 @@ class AddContact extends StatelessWidget {
             SizedBox(height: 20),
             Card(
               child: TextField(
+                keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   label: Text("Phone"),
                   suffixIcon: Icon(Icons.arrow_drop_down_circle_outlined),
@@ -76,6 +79,7 @@ class AddContact extends StatelessWidget {
             SizedBox(height: 20),
             Card(
               child: TextField(
+                keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   label: Text("Email"),
                   suffixIcon: Icon(Icons.arrow_drop_down_circle_outlined),
