@@ -12,9 +12,9 @@ class AddContact extends StatelessWidget {
           children: [
             SizedBox(
               height: 60,
-              width: 450,
+              width: 480,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Icon(Icons.cancel_presentation, size: 50),
                   Text(
