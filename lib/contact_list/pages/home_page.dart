@@ -8,9 +8,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Center(
+        title: const Center(
           child: Text(
-            "Conatact List",
+            "Contact List",
             style: TextStyle(
               color: Colors.white,
               fontSize: 22,
@@ -22,18 +22,44 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.cyanAccent,
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
       body: ListView.builder(
         itemCount: 20,
         itemBuilder: (context, index) {
           return Card(
             color: Colors.greenAccent,
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+            margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
             child: ListTile(
-              leading: CircleAvatar(child: Text("$index")),
-              title: Text("Mynul Alam"),
-              trailing: Icon(Icons.call),
+              leading: CircleAvatar(child: Text("${index + 1}")),
+              title: const Text("Mynul Alam"),
+              subtitle: Text("01860696114"),
+              trailing: SizedBox(
+                width: 96, // enough space for 3 icons
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        // Edit action
+                      },
+                      child: const Icon(Icons.edit, color: Colors.black87),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        // Delete action
+                      },
+                      child: const Icon(Icons.delete, color: Colors.red),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        // Call action
+                      },
+                      child: const Icon(Icons.call, color: Colors.green),
+                    ),
+                  ],
+                ),
+              ),
             ),
           );
         },
