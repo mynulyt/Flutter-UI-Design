@@ -5,6 +5,19 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Column());
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Conatact List",
+          style: TextStyle(
+            color: Colors.green,
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+          ),
+          textAlign: TextAlign.center,
+        ),
+      ),
+      body: Column(),
+    );
   }
 }
