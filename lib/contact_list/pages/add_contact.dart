@@ -16,7 +16,12 @@ class AddContact extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.cancel_presentation, size: 50),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: Icon(Icons.cancel_presentation, size: 50),
+                  ),
                   Text(
                     "Save Number",
                     style: TextStyle(
@@ -25,7 +30,10 @@ class AddContact extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  Icon(Icons.check, size: 50),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Icon(Icons.check, size: 50),
+                  ),
                 ],
               ),
             ),
