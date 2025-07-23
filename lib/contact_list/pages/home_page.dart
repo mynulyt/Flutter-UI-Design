@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/contact_list/pages/add_contact.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -21,7 +22,12 @@ class HomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.cyanAccent,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => AddContact()),
+          );
+        },
         child: const Icon(Icons.add),
       ),
       body: ListView.builder(
