@@ -17,6 +17,14 @@ class AssignmentModule10 extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Text(
+              "Welcome to Flutter!",
+              style: TextStyle(
+                color: Colors.black87,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
