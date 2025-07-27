@@ -25,6 +25,18 @@ class AssignmentModule10 extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Image.network(
+              "https://tse1.mm.bing.net/th/id/OIP.X0KMz7V4ozhJiB1l-4V1ZwHaEK?w=1280&h=720&rs=1&pid=ImgDetMain&o=7&rm=3",
+            ),
+            SizedBox(
+              height: 20,
+              width: 450,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                onPressed: () {},
+                child: Text("Press Me"),
+              ),
+            ),
           ],
         ),
       ),
