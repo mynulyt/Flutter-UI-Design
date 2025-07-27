@@ -38,12 +38,12 @@ class AddContact extends StatelessWidget {
               ),
             ),
             Container(
-              child: CircleAvatar(child: Icon(Icons.person, size: 80)),
               height: 120,
               width: 120,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
               ),
+              child: CircleAvatar(child: Icon(Icons.person, size: 80)),
             ),
             SizedBox(height: 20),
             Card(
